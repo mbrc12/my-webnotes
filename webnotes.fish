@@ -26,4 +26,4 @@ cat template.html | sed "s#%%BODY%%#$body#" | sed "s/%%USER%%/$WEBNOTEUSER/" > i
 
 git add .
 git commit -m "Automatic Commit"
-git push -u origin main
+git push -u origin $argv[1]
